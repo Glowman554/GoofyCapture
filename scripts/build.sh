@@ -1,4 +1,4 @@
-mkdir -pi build
+mkdir -p build
 (
     cd build
     cmake ..
