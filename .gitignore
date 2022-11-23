@@ -2,4 +2,4 @@ pico-sdk
 device
 build
 compile_flags.txt
-
+.cache
