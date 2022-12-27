@@ -1,0 +1,36 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/pico.elf",
+			"preLaunchTask": "build",
+			"args": [],
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"miDebuggerPath": "/usr/bin/gdb-multiarch",
+			"miDebuggerArgs": "",
+			"targetArchitecture": "arm",
+			"customLaunchSetupCommands": [
+				{
+					"text": "target remote localhost:3333",
+				},
+				{
+					"text": "file ${workspaceRoot}/build/pico.elf",
+				},
+				{
+					"text": "load",
+				},
+				{
+					"text": "monitor reset init",
+				}
+			],
+			"avoidWindowsConsoleRedirection": true
+		}
+	]
+}
