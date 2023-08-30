@@ -1,0 +1,6 @@
+{
+    "sample_pre_s": 10000,
+    "sample_count": 51200,
+    "trigger_pin": 2,
+    "trigger_polarity": false
+}
