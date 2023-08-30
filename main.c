@@ -61,7 +61,7 @@ void sampler_run(PIO pio, uint sm, uint dma_chan, uint32_t* capture_buf, int cap
 int main() {
     stdio_init_all();
 
-    for (int i = 2; i < 29; i++) {
+    for (int i = 0; i < 29; i++) {
         gpio_init(i);
     	gpio_set_dir(i, GPIO_IN);
         gpio_set_pulls(i, false, true);

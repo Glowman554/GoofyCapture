@@ -32,8 +32,8 @@ target_link_libraries(${TARGET}
 )
 
 # enable usb output & uart output
-pico_enable_stdio_usb(${TARGET} 0)
-pico_enable_stdio_uart(${TARGET} 1)
+pico_enable_stdio_usb(${TARGET} 1)
+pico_enable_stdio_uart(${TARGET} 0)
 
 # create map/bin/hex/uf2 file etc.
 pico_add_extra_outputs(${TARGET})
