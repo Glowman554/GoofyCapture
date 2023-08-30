@@ -5,6 +5,10 @@ from json import loads
 from datetime import datetime
 from os import system
 
+if len(sys.argv) < 3:
+    print(f"Usage: {sys.argv[0]} <serial device> <capture info file> <output?>")
+    raise Exception("Invalid arguments")
+
 if len(sys.argv) < 4:
     output = "/tmp/capture.vcd"
 else:
